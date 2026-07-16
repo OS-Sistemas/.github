@@ -1,0 +1,90 @@
+name: Nova funcionalidade
+description: Solicitar uma nova capacidade ou melhoria de negócio.
+title: "[Feature]: "
+labels:
+  - "type:feature"
+  - "status:triage"
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problema ou oportunidade
+      description: Descreva o contexto, o problema e quem é impactado.
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Resultado esperado
+      description: Explique qual capacidade deverá existir após a entrega.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Critérios de aceite
+      value: |
+        - [ ] Dado que..., quando..., então...
+        - [ ] Dado que..., quando..., então...
+    validations:
+      required: true
+  - type: textarea
+    id: out_of_scope
+    attributes:
+      label: Fora do escopo
+      description: Registre explicitamente o que não será entregue.
+  - type: dropdown
+    id: team
+    attributes:
+      label: Time responsável
+      options:
+        - Dev
+        - RPA
+        - Dados
+        - Platform
+    validations:
+      required: true
+  - type: dropdown
+    id: core
+    attributes:
+      label: Núcleo ou produto
+      options:
+        - JOBS
+        - SGI-Frontend
+        - SGI-Backend
+        - Platform
+        - Outro
+    validations:
+      required: true
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Prioridade sugerida
+      options:
+        - P0 Critical
+        - P1 High
+        - P2 Medium
+        - P3 Low
+    validations:
+      required: true
+  - type: dropdown
+    id: risk
+    attributes:
+      label: Risco inicial
+      options:
+        - Low
+        - Medium
+        - High
+        - Critical
+    validations:
+      required: true
+  - type: input
+    id: original_ticket
+    attributes:
+      label: Ticket interno relacionado
+      placeholder: ID ou link
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidências e anexos
+      description: Inclua exemplos, imagens, documentos ou referências sem dados sensíveis.

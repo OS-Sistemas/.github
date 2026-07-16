@@ -1,0 +1,86 @@
+name: Correção de bug
+description: Registrar comportamento incorreto ou regressão.
+title: "[Bug]: "
+labels:
+  - "type:bug"
+  - "status:triage"
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: Resumo do problema
+      description: Descreva o comportamento incorreto e o impacto.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Comportamento esperado
+    validations:
+      required: true
+  - type: textarea
+    id: current
+    attributes:
+      label: Comportamento atual
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Passos para reproduzir
+      value: |
+        1.
+        2.
+        3.
+    validations:
+      required: true
+  - type: dropdown
+    id: environment
+    attributes:
+      label: Ambiente
+      options:
+        - DEV
+        - N2
+        - HML
+        - PROD
+        - Local
+        - Não identificado
+    validations:
+      required: true
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Severidade
+      options:
+        - S1 - Indisponibilidade ou impacto crítico
+        - S2 - Impacto alto sem indisponibilidade total
+        - S3 - Impacto moderado
+        - S4 - Impacto baixo
+    validations:
+      required: true
+  - type: dropdown
+    id: team
+    attributes:
+      label: Time responsável
+      options:
+        - Dev
+        - RPA
+        - Dados
+        - Platform
+        - Não identificado
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Versão, release ou commit
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Logs e evidências
+      description: Remova credenciais e dados pessoais antes de anexar.
+  - type: input
+    id: original_ticket
+    attributes:
+      label: Ticket interno relacionado
+      placeholder: ID ou link

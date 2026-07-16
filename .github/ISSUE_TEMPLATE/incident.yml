@@ -1,0 +1,80 @@
+name: Incidente
+description: Registrar interrupção ou degradação em ambiente produtivo.
+title: "[Incident]: "
+labels:
+  - "type:incident"
+  - "status:triage"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Incidentes críticos devem seguir também o canal de acionamento operacional. Não aguarde somente a Issue.
+  - type: textarea
+    id: impact
+    attributes:
+      label: Impacto
+      description: Informe usuários, processos, sistemas e operações afetadas.
+    validations:
+      required: true
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Severidade
+      options:
+        - S1 - Crítico
+        - S2 - Alto
+        - S3 - Moderado
+        - S4 - Baixo
+    validations:
+      required: true
+  - type: input
+    id: started_at
+    attributes:
+      label: Início estimado
+      placeholder: YYYY-MM-DD HH:MM
+    validations:
+      required: true
+  - type: input
+    id: detected_at
+    attributes:
+      label: Horário de detecção
+      placeholder: YYYY-MM-DD HH:MM
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Versão ou commit em produção
+  - type: textarea
+    id: symptoms
+    attributes:
+      label: Sintomas e evidências
+      description: Não inclua credenciais ou dados pessoais desnecessários.
+    validations:
+      required: true
+  - type: textarea
+    id: mitigation
+    attributes:
+      label: Mitigação executada ou planejada
+  - type: textarea
+    id: rollback
+    attributes:
+      label: Situação do rollback
+  - type: dropdown
+    id: team
+    attributes:
+      label: Time responsável
+      options:
+        - Dev
+        - RPA
+        - Dados
+        - Platform
+        - Mult times
+        - Não identificado
+    validations:
+      required: true
+  - type: input
+    id: original_ticket
+    attributes:
+      label: Ticket ou registro de incidente
+      placeholder: ID ou link

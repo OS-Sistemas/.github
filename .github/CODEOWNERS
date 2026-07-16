@@ -1,0 +1,16 @@
+# Responsabilidade padrão
+* @ouro-safra/platform-admins
+
+# Governança e templates
+/.github/ @ouro-safra/platform-admins
+/CONTRIBUTING.md @ouro-safra/platform-admins
+/CODE_OF_CONDUCT.md @ouro-safra/platform-admins
+
+# Segurança
+/SECURITY.md @ouro-safra/security-reviewers
+/.github/ISSUE_TEMPLATE/security.yml @ouro-safra/security-reviewers
+
+# Perfil e comunicação
+/profile/ @ouro-safra/platform-admins
+/SUPPORT.md @ouro-safra/platform-admins
+/NOTICE.md @ouro-safra/platform-admins

@@ -1,0 +1,74 @@
+name: Tarefa técnica ou operacional
+description: Registrar uma entrega técnica ou operacional com resultado verificável.
+title: "[Task]: "
+labels:
+  - "type:task"
+  - "status:triage"
+body:
+  - type: textarea
+    id: objective
+    attributes:
+      label: Objetivo
+      description: Descreva o resultado técnico ou operacional esperado.
+    validations:
+      required: true
+  - type: textarea
+    id: value
+    attributes:
+      label: Valor ou capacidade habilitada
+      description: Explique por que esta tarefa deve existir como entrega independente.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Critérios de conclusão
+      value: |
+        - [ ] Resultado verificável:
+        - [ ] Evidência esperada:
+    validations:
+      required: true
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Dependências
+      placeholder: Sistemas, acessos, dados, pessoas ou outras Issues.
+  - type: dropdown
+    id: team
+    attributes:
+      label: Time responsável
+      options:
+        - Dev
+        - RPA
+        - Dados
+        - Platform
+    validations:
+      required: true
+  - type: dropdown
+    id: core
+    attributes:
+      label: Núcleo ou produto
+      options:
+        - JOBS
+        - SGI-Frontend
+        - SGI-Backend
+        - Platform
+        - Outro
+    validations:
+      required: true
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Prioridade
+      options:
+        - P0 Critical
+        - P1 High
+        - P2 Medium
+        - P3 Low
+    validations:
+      required: true
+  - type: input
+    id: original_ticket
+    attributes:
+      label: Ticket interno relacionado
+      placeholder: ID ou link

@@ -1,0 +1,76 @@
+name: Melhoria ou risco de segurança
+description: Registrar hardening, risco ou correção de segurança sem expor informação sensível.
+title: "[Security]: "
+labels:
+  - "type:security"
+  - "status:triage"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Não inclua senhas, tokens, chaves, dados pessoais ou detalhes exploráveis de vulnerabilidade ativa.
+        Casos sensíveis devem seguir o canal indicado em SECURITY.md.
+  - type: textarea
+    id: risk
+    attributes:
+      label: Risco ou necessidade
+      description: Descreva de forma segura e sem revelar credenciais.
+    validations:
+      required: true
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Severidade
+      options:
+        - Critical
+        - High
+        - Medium
+        - Low
+    validations:
+      required: true
+  - type: textarea
+    id: impact
+    attributes:
+      label: Impacto potencial
+    validations:
+      required: true
+  - type: textarea
+    id: mitigation
+    attributes:
+      label: Mitigação ou controle esperado
+    validations:
+      required: true
+  - type: dropdown
+    id: environment
+    attributes:
+      label: Ambiente
+      options:
+        - Organização GitHub
+        - DEV
+        - N2
+        - HML
+        - PROD
+        - Multiplos ambientes
+        - Não aplicável
+    validations:
+      required: true
+  - type: dropdown
+    id: team
+    attributes:
+      label: Time responsável
+      options:
+        - Dev
+        - RPA
+        - Dados
+        - Platform
+        - Security
+        - Mult times
+    validations:
+      required: true
+  - type: checkboxes
+    id: safe
+    attributes:
+      label: Confirmação
+      options:
+        - label: Confirmei que esta Issue não contém credenciais ou dados sensíveis.
+          required: true
