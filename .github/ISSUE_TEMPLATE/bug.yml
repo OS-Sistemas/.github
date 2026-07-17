@@ -1,4 +1,4 @@
-Issue Type: Bug
+type: Bug
 name: Correção de bug
 description: Registrar comportamento incorreto ou regressão.
 body:
