@@ -1,8 +1,0 @@
-blank_issues_enabled: false
-contact_links:
-  - name: Reportar vulnerabilidade ou segredo exposto
-    url: https://github.com/ouro-safra/.github/security/policy
-    about: Não publique credenciais ou vulnerabilidades ativas em uma Issue comum.
-  - name: Abrir chamado corporativo
-    url: https://example.invalid/substituir-pelo-sistema-de-tickets
-    about: Utilize o sistema interno para solicitações e suporte ao usuário.

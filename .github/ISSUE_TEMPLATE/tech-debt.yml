@@ -1,9 +1,5 @@
 name: Dívida técnica
 description: Registrar risco, limitação ou custo técnico que precisa ser reduzido.
-title: "[Tech Debt]: "
-labels:
-  - "type:tech-debt"
-  - "status:triage"
 body:
   - type: textarea
     id: debt
@@ -16,7 +12,7 @@ body:
     id: consequences
     attributes:
       label: Consequências atuais
-      description: Informe risco, retrabalho, custo, instabilidade ou bloqueios.
+      description: Informe retrabalho, custo, instabilidade, risco ou bloqueios.
     validations:
       required: true
   - type: textarea
@@ -30,36 +26,8 @@ body:
     attributes:
       label: Abordagem sugerida
       description: Registre alternativas quando existirem.
-  - type: dropdown
-    id: team
+  - type: textarea
+    id: evidence
     attributes:
-      label: Time responsável
-      options:
-        - Dev
-        - RPA
-        - Dados
-        - Platform
-    validations:
-      required: true
-  - type: dropdown
-    id: risk
-    attributes:
-      label: Risco de manter a dívida
-      options:
-        - Low
-        - Medium
-        - High
-        - Critical
-    validations:
-      required: true
-  - type: dropdown
-    id: priority
-    attributes:
-      label: Prioridade
-      options:
-        - P0 Critical
-        - P1 High
-        - P2 Medium
-        - P3 Low
-    validations:
-      required: true
+      label: Evidências técnicas
+      description: Inclua métricas, ocorrências ou referências que sustentem a necessidade.

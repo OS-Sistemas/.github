@@ -1,9 +1,5 @@
 name: Epic ou iniciativa
 description: Registrar um resultado amplo composto por várias entregas.
-title: "[Epic]: "
-labels:
-  - "type:epic"
-  - "status:triage"
 body:
   - type: markdown
     attributes:
@@ -30,7 +26,7 @@ body:
       description: Informe como o resultado será medido.
       placeholder: |
         - Indicador:
-        - Baseline:
+        - Cenário atual:
         - Meta:
     validations:
       required: true
@@ -38,50 +34,16 @@ body:
     id: scope
     attributes:
       label: Escopo
-      placeholder: |
+      value: |
         Inclui:
         -
+
         Não inclui:
         -
     validations:
       required: true
-  - type: dropdown
-    id: team
+  - type: textarea
+    id: dependencies
     attributes:
-      label: Time responsável
-      options:
-        - Dev
-        - RPA
-        - Dados
-        - Platform
-        - Mult times
-    validations:
-      required: true
-  - type: dropdown
-    id: core
-    attributes:
-      label: Núcleo ou produto
-      options:
-        - JOBS
-        - SGI-Frontend
-        - SGI-Backend
-        - Platform
-        - Outro
-    validations:
-      required: true
-  - type: dropdown
-    id: priority
-    attributes:
-      label: Prioridade
-      options:
-        - P0 Critical
-        - P1 High
-        - P2 Medium
-        - P3 Low
-    validations:
-      required: true
-  - type: input
-    id: original_ticket
-    attributes:
-      label: Ticket interno relacionado
-      placeholder: ID ou link
+      label: Dependências e entregas relacionadas
+      description: Relacione sistemas, equipes, decisões ou outras Issues.

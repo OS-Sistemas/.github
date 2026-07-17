@@ -1,9 +1,5 @@
 name: Problema estrutural
 description: Investigar causa estrutural de incidentes ou falhas recorrentes.
-title: "[Problem]: "
-labels:
-  - "type:problem"
-  - "status:triage"
 body:
   - type: textarea
     id: pattern
@@ -39,29 +35,6 @@ body:
       value: |
         - [ ] Causa ou fatores contribuintes identificados
         - [ ] Ações preventivas registradas
-        - [ ] Donos e prazos definidos
-    validations:
-      required: true
-  - type: dropdown
-    id: team
-    attributes:
-      label: Time responsável
-      options:
-        - Dev
-        - RPA
-        - Dados
-        - Platform
-        - Mult times
-    validations:
-      required: true
-  - type: dropdown
-    id: priority
-    attributes:
-      label: Prioridade
-      options:
-        - P0 Critical
-        - P1 High
-        - P2 Medium
-        - P3 Low
+        - [ ] Responsáveis e prazos definidos
     validations:
       required: true

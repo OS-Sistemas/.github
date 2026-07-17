@@ -1,9 +1,5 @@
 name: Spike ou investigação
 description: Registrar investigação técnica com tempo e resultado definidos.
-title: "[Spike]: "
-labels:
-  - "type:spike"
-  - "status:triage"
 body:
   - type: textarea
     id: question
@@ -30,7 +26,7 @@ body:
     id: timebox
     attributes:
       label: Timebox
-      placeholder: Exemplo: 2 dias
+      placeholder: "Exemplo: 2 dias"
     validations:
       required: true
   - type: textarea
@@ -42,27 +38,5 @@ body:
         - [ ] Recomendação
         - [ ] Riscos e limitações
         - [ ] ADR ou novas Issues, quando aplicável
-    validations:
-      required: true
-  - type: dropdown
-    id: team
-    attributes:
-      label: Time responsável
-      options:
-        - Dev
-        - RPA
-        - Dados
-        - Platform
-    validations:
-      required: true
-  - type: dropdown
-    id: priority
-    attributes:
-      label: Prioridade
-      options:
-        - P0 Critical
-        - P1 High
-        - P2 Medium
-        - P3 Low
     validations:
       required: true
