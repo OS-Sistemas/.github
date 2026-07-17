@@ -1,3 +1,4 @@
+type: Spike
 name: Spike ou investigação
 description: Registrar investigação técnica com tempo e resultado definidos.
 body:

@@ -1,3 +1,4 @@
+type: Security
 name: Melhoria ou risco de segurança
 description: Registrar hardening, risco ou correção de segurança sem expor informação sensível.
 body:

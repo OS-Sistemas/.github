@@ -1,3 +1,4 @@
+type: Feature
 name: Nova funcionalidade
 description: Solicitar uma nova capacidade ou melhoria de negócio.
 body:

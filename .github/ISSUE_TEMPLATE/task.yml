@@ -1,3 +1,4 @@
+type: Task
 name: Tarefa técnica ou operacional
 description: Registrar uma entrega técnica ou operacional com resultado verificável.
 body:

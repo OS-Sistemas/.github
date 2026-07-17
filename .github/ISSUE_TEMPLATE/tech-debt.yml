@@ -1,3 +1,4 @@
+type: Tech Debt
 name: Dívida técnica
 description: Registrar risco, limitação ou custo técnico que precisa ser reduzido.
 body:

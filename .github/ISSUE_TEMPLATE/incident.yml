@@ -1,3 +1,4 @@
+type: Incident
 name: Incidente
 description: Registrar interrupção ou degradação de serviço.
 body:
