@@ -6,7 +6,6 @@ body:
     attributes:
       value: |
         Não inclua senhas, tokens, chaves, dados pessoais ou detalhes exploráveis de vulnerabilidade ativa.
-  - type: textarea
     id: need
     attributes:
       label: Risco ou necessidade
