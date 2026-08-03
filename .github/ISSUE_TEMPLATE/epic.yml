@@ -1,2 +1,12 @@
-# Formulário desativado.
-# Substituído por melhoria.yml.
+type: Melhoria
+name: Melhoria
+description: Registrar uma melhoria ou iniciativa.
+body:
+  - type: textarea
+    id: melhoria
+    attributes:
+      label: Descrição da melhoria
+      description: Descreva a melhoria solicitada, o problema atual e o resultado esperado.
+      placeholder: Explique de forma clara o que precisa ser melhorado.
+    validations:
+      required: true
