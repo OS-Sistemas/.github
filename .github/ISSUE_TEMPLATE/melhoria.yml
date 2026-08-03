@@ -1,0 +1,50 @@
+type: Melhoria
+name: Melhoria
+description: Registrar um resultado amplo composto por várias entregas.
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Utilize este formulário para melhorias e iniciativas com resultado amplo. As entregas executáveis devem ser divididas em Issues menores.
+  - type: textarea
+    id: context
+    attributes:
+      label: Contexto e problema
+      description: Explique o cenário atual e por que a melhoria é necessária.
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Resultado esperado
+      description: Descreva o resultado de negócio ou técnico esperado.
+    validations:
+      required: true
+  - type: textarea
+    id: success
+    attributes:
+      label: Indicadores de sucesso
+      description: Informe como o resultado será medido.
+      placeholder: |
+        - Indicador:
+        - Cenário atual:
+        - Meta:
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Escopo
+      value: |
+        Inclui:
+        -
+
+        Não inclui:
+        -
+    validations:
+      required: true
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Dependências e entregas relacionadas
+      description: Relacione sistemas, equipes, decisões ou outras Issues.
