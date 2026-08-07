@@ -2,6 +2,18 @@ type: Feature
 name: Nova funcionalidade
 description: Solicitar uma nova capacidade ou melhoria de negócio.
 body:
+  - type: dropdown
+    id: team
+    attributes:
+      label: Equipe
+      description: Selecione a equipe responsável pela demanda.
+      options:
+        - VX 360
+        - RPA
+        - SGI
+        - Dados
+    validations:
+      required: true
   - type: textarea
     id: problem
     attributes:
